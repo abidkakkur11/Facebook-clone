@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "https://img.icons8.com/fluency/50/000000/facebook-new.png" type = "image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/48291d9a75.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&family=Inter&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<!-------------------top section--------------->  
+<div id="major">
+    <div class="top">
+    <div class="top-left">
+        <img class="logo" alt="logo" src="https://img.icons8.com/fluency/48/000000/facebook-new.png"/> 
+        <input type="text" name="search" id="search" class="search" placeholder="Search">
+    </div>
+    <div class="top-middle">
+        <span class="material-icons" id="top-menu-icon1">&#xe88a;</span>
+        <span class="material-icons" id="top-menu-icon2">&#xe63a;</span>
+        <span class="material-icons" id="top-menu-icon3">&#xea12;</span>
+        <span class="material-icons" id="top-menu-icon4">&#xf233;</span>
+    </div>
+    <div class="top-right">
+        <img src="src/dp.jpg" alt="profile-pic" id="left-dp" class="right-dp">
+        <h4 class="username">Minnal Murali</h4>
+        <div class="drop-content">
+            <span class="material-icons" id="top-menu-icon4">&#xe9ba;</span>
+            <a href="index.html" class="logout">Log out</a>
+        </div>
+    </div>
+    </div>
+<!-------------------top section--------------->
+<!-------------------left section----------------------->
+
+<div class="main" id="main">
+    <div class="main-left" id="main-left">
+        <div class="user-section">
+        <!--<span class="material-icons" id="left-profile-icon">&#xe853;</span>
+        <h4 class="username1">Username</h4>--->
+        <img src="src/dp.jpg" alt="profile-pic" id="left-profile-icon" class="left-dp">
+        <h4 class="username1">Minnal Murali</h4>
+        </div>
+        <ul class="left-list">
+            <li class="list-items"><span class="material-icons">&#xe7fb;</span> Friends</li>
+            <li class="list-items"><span class="material-icons">&#xf233;</span> Groups </li>
+            <li class="list-items"><span class="material-icons">&#xe63a;</span>Videos</li>
+            <li class="list-items"><span class="material-icons">&#xea12;</span>Marketplace</li>
+            <li class="list-items"><span class="material-icons">&#xe889;</span>Memories</li>
+        </ul>
+        <p class="shortcut-heading">Your shortcuts</p>
+        <div class="left-bottom">
+            <ul class="shortcut-list">
+            <li class="shortcuts"><span class="material-icons">&#xe853;</span>User</li>
+            <li class="shortcuts"><span class="material-icons">&#xe853;</span>User</li>
+            <li class="shortcuts"><span class="material-icons">&#xe853;</span>User</li>
+            <li class="shortcuts"><span class="material-icons">&#xe853;</span>User</li>                    
+        </ul>
+        </div>
+    </div>
+    <!-------------------left section end----------------------->
+    <div class="main-middle" id="main-middle">
+        <!-------------------story section start----------------------->
+        <div class="middle-stories" id="middle-stories">
+            <div class="story">
+            <img src="src/story (5).jpg" alt="story" id="story1" class="story">
+            <img src="src/dp.jpg" alt="profile-pic" id="story-dp-murali" class="story-dp">
+            <p id="storyusername">Your Story</p>
+        </div>
+        <div class="story">
+            <img src="src/spiderman-story.jpg" alt="story" id="story2" class="story">
+            <img src="src/spiderman-dp.jpeg" alt="profile-pic" id="story-dp-spiderman" class="story-dp">
+            <p id="storyusername">Spider Man</p>
+        </div>    
+        <div class="story">
+            <img src="src/ironman-story.jpg" alt="story" id="story3" class="story">
+            <img src="src/ironman-dp.jpg" alt="profile-pic" id="story-dp-ironman" class="story-dp">
+            <p id="storyusername">Iron Man</p>
+        </div>
+        <div class="story">
+            <img src="src/thor-story.jpg" alt="story" id="story4" class="story">
+            <img src="src/thor-dp.jpg" alt="profile-pic" id="story-dp-thor" class="story-dp">
+            <p id="storyusername">Thor</p>
+        </div>
+        <div class="story">
+            <img src="src/batman-story.jpg" alt="story" id="story5" class="story">
+            <img src="src/batman-dp.jpg" alt="profile-pic" id="story-dp-batman" class="story-dp">
+            <p id="storyusername">Batman</p>
+        </div>    
+            <span class="material-icons story-arrow" id="story-arrow">&#xeaaa;</span>
+        </div>
+        <!-------------------story section ends----------------------->
+
+        <!-------------------Post section starts----------------------->
+        <div class="post-section" id="post-section">
+            <div class="post" id="post">
+            <img src="src/dp.jpg" alt="profile-pic" class="post-dp1">
+            <input type="text" id="post-text" class="post-text" onkeyup="postbuttonadjustment()" placeholder="What's on your mind...!?">
+            </div>
+            <button id="post-button" class="post-button" onclick="posting()">Post</button>
+            <div class="post-options" id="post-options">
+            <span class="material-icons post-option-icon" id="live">&#xf07f;</span> <h5 class="post-options-text">live Video</h5>
+            <span class="material-icons post-option-icon" id="photolibrary">&#xe413;</span> <h5 class="post-options-text">Photo/Video</h5>
+            <span class="material-icons post-option-icon" id="feeling">&#xea22;</span> <h5 class="post-options-text">Feeling/Activity</h5>
+            </div>
+        </div>
+    <div id="posted-postes">
+
+        <!----------------------------------------->
+        <div class="posted">
+            <div class="posted-user">
+                <img src="src/dp.jpg" alt="profile-pic" id="post-dp" class="post-dp">
+                <h5 class="posted-username">Minnal Murali</h5>
+                <p class="posted-time">Posted an hour ago.</p> 
+                <span class="material-icons post-option"  onclick="dropdownit(this)">&#xe5d3;</span>    
+            </div>
+            <div class="posted-post">
+                <p class="caption" >Easy..!</p>
+            </div>
+            <div class="like-section">
+                <div class="post-attributes"><i class="far fa-thumbs-up fa-2x" id="like-icon" onclick="toggleLike(this)"></i> <span id="like-text">Like</span></div>
+                <div class="post-attributes"><i class="far fa-comment fa-2x" id="comment-icon" onclick="comment(this)"></i> <span id="comment-text">Comment</span></div>
+                <div class="post-attributes"><i class="fas fa-share fa-2x" id="share-icon"></i> <span id="share-text">Share</span></div>
+            </div>
+        </div>
+        <!----------------------------------------->
+
+        <div class="posted" id="posted">
+            <div class="posted-user">
+                <img src="src/dp.jpg" alt="profile-pic" id="post-dp1" class="post-dp">
+                <h5 class="posted-username">Minnal Murali</h5>
+                <p class="posted-time">Posted an hour ago.</p> 
+
+                <span class="material-icons post-option"  onclick="dropdownit(this)">&#xe5d3;</span>    
+            </div>
+            <div class="posted-post">
+                <p class="caption">Easy..!</p>
+                <img src="src/minnal-post.jpg" alt="Post" class="posted-image">
+            </div>
+            <div class="like-section">
+                <div class="post-attributes"><i class="far fa-thumbs-up fa-2x" id="like-icon" onclick="toggleLike(this)"></i> <span id="like-text">Like</span></div>
+                <div class="post-attributes"><i class="far fa-comment fa-2x" id="comment-icon" onclick="comment(this)"></i> <span id="comment-text">Comment</span></div>
+                <div class="post-attributes"><i class="fas fa-share fa-2x" id="share-icon"></i> <span id="share-text">Share</span></div>
+            </div>
+        </div>
+
+        <div class="posted" id="posted">
+            <div class="posted-user">
+                <img src="src/shibu-dp.jpg" alt="profile-pic" id="post-dp2" class="post-dp">
+                <h5 class="posted-username">Shibu</h5>
+                <p class="posted-time">Posted an hour ago.</p> 
+
+                <span class="material-icons post-option" onclick="dropdownit(this)">&#xe5d3;</span>    
+            </div>
+            <div class="posted-post">
+                <p class="caption">Let's fly..!</p>
+                <img src="src/shibu.jpg" alt="Post" class="posted-image">
+            </div>
+            <div class="like-section">
+                <div class="post-attributes"><i class="far fa-thumbs-up fa-2x" id="like-icon" onclick="toggleLike(this)"></i> <span id="like-text">Like</span></div>
+                <div class="post-attributes"><i class="far fa-comment fa-2x" id="comment-icon" onclick="comment(this)"></i> <span id="comment-text">Comment</span></div>
+                <div class="post-attributes"><i class="fas fa-share fa-2x" id="share-icon"></i> <span id="share-text">Share</span></div>
+            </div>
+        </div>
+        
+        <div class="posted" id="posted">
+            <div class="posted-user">
+                <img src="src/biji-dp.jpg" alt="profile-pic" id="post-dp3" class="post-dp">
+                <h5 class="posted-username">Bruce Lee Biji</h5>
+                <p class="posted-time">Posted an hour ago.</p> 
+
+                <span class="material-icons post-option" onclick="dropdownit(this)">&#xe5d3;</span>    
+            </div>
+            <div class="posted-post">
+                <p class="caption">Simple..!</p>
+                <img src="src/bincy.jpg" alt="Post" class="posted-image">
+            </div>
+            <div class="like-section">
+                <div class="post-attributes"><i class="far fa-thumbs-up fa-2x" id="like-icon" onclick="toggleLike(this)"></i> <span id="like-text">Like</span></div>
+                <div class="post-attributes"><i class="far fa-comment fa-2x" id="comment-icon" onclick="comment(this)"></i> <span id="comment-text">Comment</span></div>
+                <div class="post-attributes"><i class="fas fa-share fa-2x" id="share-icon"></i> <span id="share-text">Share</span></div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="main-right" id="main-right">
+        <div class="right-page">
+            <h4 class="page-name">Your pages</h4>
+            <div class="right-page-name">
+            <img src="src/page-dp.jpg" alt="profile-pic" id="right-page-icon" class="left-dp">
+            <h4 class="username3">Jaison Tailoring</h4></div>
+            <div class="notification"><i class="fas fa-bell"></i> <span>12 Notification</span></div>
+            <h4 class="page-name">Contacts</h4>
+            <div class="contacts">
+                <div class="contacts-pro"><img src="src/biji-dp.jpg" alt="profile-pic" id="contact-profile-icon" >
+                <h4 class="username2">Bruce Lee Biji</h4> <span id="online-green">●</span></div>
+                <div class="contacts-pro"><img src="src/ironman-dp.jpg" alt="profile-pic" id="contact-profile-icon" >
+                <h4 class="username2">Iron Man</h4> <span id="online-green">●</span></div>
+                <div class="contacts-pro"><img src="src/spiderman-dp.jpeg" alt="profile-pic" id="contact-profile-icon" >
+                <h4 class="username2">Spider Man</h4> <span id="online-green">●</span></div>
+                <div class="contacts-pro"><img src="src/thor-dp.jpg" alt="profile-pic" id="contact-profile-icon" >
+                <h4 class="username2">Thor</h4> <span id="online-green">●</span></div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+</div> 
+<script src="script1.js"></script>
+</body>

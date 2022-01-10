@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  .container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      height: 600px;
+      background-color: #E9EBEE;
+  }
+  .name{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      vertical-align: middle;
+      position: relative;
+  }
+  .facebook{
+      color: #1aa3ff;
+      font-weight: 600;
+      font-size: 50px;
+      text-align: left;
+      margin-left: 25%;
+  }
+  .slogan{
+      margin-left: 25%;
+      margin-top: -5%;
+      text-align: left;
+      width: 70%;
+  }
+  .login-session{
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      padding: 15px;
+      height: max-content;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0px 5px 10px #888888;
+  }
+  .username{
+      margin-bottom: 3%;
+      height: 50px;
+      border-radius: 5px;
+      border-width: 1px;
+      outline-width: 0px;
+      font-size: 18px;
+      border-color:#90949C;
+  }
+  .password{
+    margin-bottom: 3%;
+    height: 50px;
+    border-radius: 5px;
+    border-width: 1px;
+    outline-width: 0px;
+    font-size: 18px;
+    border-color:#90949C;        
+  }
+  .login{
+    margin-bottom: 3%;
+    height: 50px;
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: #4267B3;
+    font-weight: 600;
+    color: #E9EBEE;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .forgot{
+      margin-bottom: 3%;
+      text-align: center;
+      color: #1aa3ff;
+  }
+  .alert{
+      background-color: #ff1a1a;
+      width: max-content;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      text-align: center;
+      display: none;
+      margin-left: 35%;
+      position: relative;
+      z-index: 100;
+      animation: myanimation 0.82s cubic-bezier(.36,.07,.19,.97) both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 1000px;
+  }
+  @keyframes myanimation{10%, 90% {
+        transform: translate3d(-1px, 0, 0);}
+        20%, 80% {
+        transform: translate3d(2px, 0, 0);}
+        30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);}
+        40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+    }
+    @media only screen and (max-width:700px){
+    .container{
+        flex-direction: column;
+    }
+    .name{
+        width: 80%;
+    }
+    .login-session{
+        width: 80%;
+    }
+    }
